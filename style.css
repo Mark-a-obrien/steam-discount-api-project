@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 16px;
+}
+p {
+  font-size: 12px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #121212;  
+  color: white;
+
+  padding-top: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+
+  padding: 4rem;
+  background-color: #121212;  
+}
+
+.deal-card {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  justify-content: space-around;
+
+  gap: 1rem;
+
+  background-color: #1d1d1d;
+
+  padding: 1rem;
+}
+
+.deal-card > * {
+  color: white;
+}
+
+.image {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+
+
+
+/* Features */
+
+.underFiveEuro {
+  color: #b2df16;
+}
+
+
+
+/* Rating */
+.rating-mixed {
+  border-left: solid red 4px;
+}
+
+.rating-mostly-positive {
+  border-left: solid orange 4px;
+}
+
+.rating-positive{
+  border-left: solid #dcf466 4px;
+}
+
+.rating-very-positive {
+  border-left: solid #66C0F4 4px;
+}
+
+.rating-overwhelmingly-positive {
+  border-left: solid #b2df16 4px;
+}
+
+
+
+
+
+@media (max-width: 450px) {
+  main {
+    grid-template-columns: 1fr;
+  
+    padding: 1rem;
+  }
+}
