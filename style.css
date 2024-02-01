@@ -97,9 +97,15 @@ main {
 
 
 
+@media (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  
+    padding: 2rem;
+  }
+}
 
-
-@media (max-width: 450px) {
+@media (max-width: 650px) {
   main {
     grid-template-columns: 1fr;
   
